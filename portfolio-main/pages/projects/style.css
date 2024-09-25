@@ -1,0 +1,57 @@
+:root {
+  --color-pink: #f067b9;
+}
+
+/* сброс стилей */
+html, body {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(to bottom right, #1f1e1e, #9a9797);
+  background-size: cover;
+  background-attachment: fixed; 
+  color: #cdcaca !important;
+  font-family: 'Baskervville SC' !important;
+  font-weight: 100;
+  height: 100% !important; 
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  
+}
+h5 {
+  font-family: 'Dancing Script' !important;
+  color:var(--color-pink) !important;
+  font-size: 35px !important;
+}
+html, body, a, button, ul, li, h1, h3, p, h4 {
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+ul, li {
+
+  list-style: none;
+}
+img {
+  filter: grayscale() !important;
+}

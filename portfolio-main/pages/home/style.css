@@ -2,25 +2,38 @@
   --color-pink: #f067b9;
 }
 
-/* сброс силей */
-html {
-  height: 100%;
-  padding: 0;
+/* сброс стилей */
+html, body {
+  height: 100% !important;
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
-*::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
+
 body {
-  background: #6b6b6b !important;
+  background: linear-gradient(to bottom right, #1f1e1e, #9a9797);
   background-size: cover;
-  color: #cdcdcd !important;
+  background-attachment: fixed; 
+  color: #cdcaca !important;
   font-family: 'Baskervville SC' !important;
   font-weight: 100;
-  box-sizing: border-box;
-  height: 100%;
+  height: 100% !important; 
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  
+}
+h5 {
+  font-family: 'Dancing Script' !important;
+  color:var(--color-pink) !important;
+  font-size: 35px !important;
 }
 html, body, a, button, ul, li, h1, h3, p, h4 {
   padding: 0;
@@ -36,6 +49,7 @@ button {
   cursor: pointer;
 }
 ul, li {
+
   list-style: none;
 }
 img {
@@ -76,7 +90,6 @@ img {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  border-bottom: 2px solid #cdcdcd;
 }
 
 .my-image {
@@ -103,13 +116,17 @@ h1 {
 h3 {
   font-family: 'Dancing Script' !important;
   color:var(--color-pink) !important;
-  font-size: 40px;
+  font-size: 45px !important;
 }
 p {
   font-size: 18px;
 }
-h4 {
-  font-size: 30px;
+ul, li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.instrumens h4, .skills h4 {
+  font-size: 35px;
   color:var(--color-pink) !important;
   font-family: 'Dancing Script' !important;
 }
@@ -124,7 +141,7 @@ h4 {
 }
 
 /*стили хобби*/
-.hobbies-content {
+/* .hobbies-content {
   padding: 40px !important;
   gap: 150px;
   height: 100% !important;
@@ -154,7 +171,9 @@ h4 {
   width: 250px;
   height: 180px;
   filter: grayscale();
-}
+} */
+
+
 /*стили контакты*/
 .contacts {
   height: 100%;
